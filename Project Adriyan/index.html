@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codriyan</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      .container {
+        text-align: center;
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .hero {
+        background-image: url("pantai.png");
+        background-size: cover;
+        background-position: center;
+        height: 560px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #d1c1a9;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #efebe5;
+      }
+      .about {
+        padding-bottom: 250px;
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+        justify-content: space-around; /* Center the items horizontally */
+      }
+
+      .text {
+        margin: 0 20px;
+        max-width: 600px; /* Limit the width on larger screens */
+        flex: 1; /* Take remaining space */
+      }
+
+      .gambar {
+        margin-left: 20px;
+        flex-basis: 300px; /* Set a fixed width for the image on larger screens */
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      @media (max-width: 768px) {
+        .about {
+          padding-bottom: 50px; /* Adjust padding for smaller screens */
+        }
+
+        .text,
+        .gambar {
+          margin: 10px 0; /* Add spacing on smaller screens */
+          flex-basis: 100%; /* Full width on smaller screens */
+        }
+      }
+      .product {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+
+      h1 {
+        color: #623e2a;
+        font-size: 56px;
+        text-align: center;
+      }
+
+      .divider {
+        margin-top: 40px;
+      }
+
+      .card {
+        width: 100%; /* Menggunakan lebar 100% agar mengikuti lebar parent */
+        margin-bottom: 20px;
+        box-sizing: border-box; /* Menjamin bahwa padding dan border tidak menambah lebar elemen */
+      }
+
+      img {
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      a {
+        display: block; /* Mengubah link menjadi blok agar dapat menetapkan lebar dan tinggi */
+        padding: 20px;
+        background-color: #623e2a;
+        text-decoration: none;
+        color: white;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      a:hover {
+        display: block; /* Mengubah link menjadi blok agar dapat menetapkan lebar dan tinggi */
+        padding: 20px;
+        background-color: #efebe5;
+        text-decoration: none;
+        color: #623e2a;
+        margin-top: 10px;
+        text-align: center;
+        border: 2px solid #623e2a;
+      }
+      @media (min-width: 600px) {
+        /* Aturan gaya untuk dekstop (lebar layar minimal 600px) */
+        .card {
+          width: calc(50% - 20px); /* Menetapkan lebar card menjadi setengah dari lebar layar dengan margin 10px di setiap sisi */
+        }
+      }
+
+      .item {
+        display: flex;
+        justify-content: center;
+      }
+
+      .card {
+        width: 250px;
+        margin: 0 25px; /* Tambahkan margin di sisi setiap card sebesar 25px */
+        text-align: center; /* Tengahkan teks dalam card */
+      }
+
+      img {
+        height: auto;
+        margin-bottom: 10px;
+      }
+
+      a {
+        display: block;
+        padding: 20px;
+        background-color: #623e2a;
+        text-decoration: none;
+        color: white;
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      a:hover {
+        display: block;
+        padding: 20px;
+        background-color: #efebe5;
+        text-decoration: none;
+        color: #623e2a;
+        margin-top: 10px;
+        text-align: center;
+        border: 2px solid #623e2a;
+      }
+
+      @media (max-width: 600px) {
+        /* Aturan gaya untuk tampilan mobile */
+        .item {
+          flex-direction: column; /* Mengubah arah flex menjadi kolom */
+          align-items: center; /* Tengahkan item di dalam kolom */
+        }
+
+        .card {
+          margin: 10px 0; /* Tambahkan margin di atas dan bawah setiap card */
+        }
+      }
+      .promo {
+        background-image: url("ireng.png");
+        background-size: cover;
+        background-position: center;
+        height: 460px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #d1c1a9;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Hero-->
+    <div class="hero">
+      <div class="container">
+        <h4 style="font-size: 28px; margin-bottom: -10px; color: white" data-aos="zoom-in" data-aos-duration="1000">Welcome To</h4>
+        <h1 style="font-size: 58px; color: white" data-aos="zoom-in" data-aos-duration="3000"><b>PT.Codriyan</b></h1>
+        <h4 style="font-size: 24px; margin-top: -38px; color: white" data-aos="zoom-in" data-aos-duration="2000">Coconut Raw Processed</h4>
+      </div>
+    </div>
+    <!--Hero-->
+
+    <!--About-->
+    <div class="about" style="padding-bottom: 150px; display: flex; margin-top: 90px">
+      <div class="text" style="margin-left: 50px; margin-right: 50px">
+        <h1 style="font-size: 52px; color: #623e2a" data-aos="zoom-in" data-aos-duration="3000">Welcome to Our Company</h1>
+        <h3 style="font-size: 28px; color: #623e2a" data-aos="fade-right">About</h3>
+        <p style="color: #623e2a; font-size: 18px" data-aos="fade-right" data-aos-duration="2000">
+          <b>
+            Our company, PT. CodriyanRawProcessed is a company operating in the export sector, which focuses on processed coconut products (briquettes, sawdust briquettes, BBQ briquettes, Shisha briquettes, and coconut fiber). You can do
+            business with us with complete confidence as we are a credible supplier and are currently seeking new relationships with potential buyers. I look forward to meeting you and developing our business relationship. You may have
+            received many offers from different sellers, but what sets us apart from others is our success, and our access to a variety of processed coconuts.
+          </b>
+        </p>
+      </div>
+      <div class="gambar" style="margin-left: 50px">
+        <img src="tempurung.png" alt="" height="330px" width="280px" data-aos="fade-left" />
+      </div>
+    </div>
+    <!--About-->
+
+    <!--Product-->
+    <div class="product" style="margin-bottom: 150px">
+      <h1>Briquettes Type</h1>
+      <div class="divider"></div>
+      <div class="item" style="margin-bottom: 150px">
+        <div class="card" style="width: 250px" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="menyala.png" alt="" width="100%" />
+          <a href="#">See Details</a>
+        </div>
+        <div class="card" style="width: 250px" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="mentah.png" alt="" width="100%" />
+          <a href="#">See Details</a>
+        </div>
+        <div class="card" style="width: 250px" data-aos="zoom-in" data-aos-duration="1000">
+          <img src="briket.png" alt="" width="100%" />
+          <a href="#">See Details</a>
+        </div>
+      </div>
+    </div>
+    <!--Product-->
+
+    <!--Promotion-->
+    <div class="promo">
+      <div class="container" style="margin-bottom: 100px">
+        <h1 style="font-size: 58px; color: white"><b>We are Very Ready</b></h1>
+        <h4 style="font-size: 24px; margin-top: -38px; color: white">To be your trust in building a masterpiece</h4>
+        <a href="" style="width: 150px; display: flex; justify-content: center; margin: auto; font-size: 24px" data-aos="zoom-in">Contact Me</a>
+      </div>
+    </div>
+    <!--Promotion-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

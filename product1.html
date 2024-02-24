@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #efebe5;
+        color: #623e2a;
+      }
+
+      .link {
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .link a {
+        text-decoration: none;
+        font-size: larger;
+        color: #623e2a;
+        display: inline-block; /* Aligns the link horizontally */
+        padding: 10px 20px;
+        border: 2px solid #623e2a;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .link a:hover {
+        background-color: #623e2a;
+        color: white;
+      }
+
+      img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+      }
+
+      .spesifikasi {
+        margin: 25px; /* Combined margin-left and margin-right into one */
+      }
+
+      .order-button {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #623e2a;
+        color: white;
+        padding: 12px 20px;
+        border: 2px solid #623e2a;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .order-button:hover {
+        background-color: #fff;
+        color: #623e2a;
+      }
+
+      @media screen and (min-width: 600px) {
+        .link {
+          margin-top: 50px;
+        }
+
+        img {
+          width: 70%;
+        }
+
+        .spesifikasi {
+          margin: 50px; /* Increased margin for larger screens */
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        img {
+          width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="link">
+      <a href="index.html">Back to Home</a>
+    </div>
+    <img src="menyala.png" alt="" />
+
+    <!-- Spesifikasi -->
+    <div class="spesifikasi">
+      <h1>Specification Product</h1>
+      <ol>
+        <li>No Smell, No Smoke</li>
+        <li>Moisture: 8% Max</li>
+        <li>Hardness: 95% Mi</li>
+        <li>Volatile Matter: 13% Max</li>
+        <li>Ash Content: 3%</li>
+        <li>Fix Carbon: 75%</li>
+        <li>Calorific Value (J): > 7200</li>
+        <li>Burning Time: 1.5-2.5 Hours</li>
+      </ol>
+      <a href="https://wa.me/089695604620?text=Hi%2C%20can%20I%20order%20your%20briquette%20products%3F" class="order-button" style="margin: auto; justify-content: center; display: flex; font-size: 24px">Order Now</a>
+    </div>
+    <!-- Spesifikasi -->
+  </body>
+</html>
